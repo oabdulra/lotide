@@ -30,12 +30,24 @@ const letterPositions = function(sentence) {
   
   const results = {};
 
-  let sentenceArray = sentence.split('');
-  sentenceArray = sentence.replace(/\s+/g, '');
+  //converting the string into an array without spaces
+  let sentenceArray = sentence.split(' ').join('').split('');
+  
+  //console.log(sentenceArray);
 
-  console.log(sentenceArray);
+  for (let i = 0 ; i < sentenceArray.length ; i++){
+
+    if(results[sentenceArray[i]]){
+      results[sentenceArray[i]].push(i);
+    }
+    else{
+      results[sentenceArray[i]] = [i];
+    }
+  }
 
   return results;
 };
 
-//letterPositions('hot dog');
+//console.log(letterPositions('hot dog'));
+
+//assertArraysEqual(letterPositions("hello").e, [1]);

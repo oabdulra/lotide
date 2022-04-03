@@ -9,8 +9,9 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function (strToCount) {
 
-  let strToArray = strToCount.split("");
-  strToArray = strToCount.replace(/\s+/g, '');
+  //converting string to an array without spaces 
+  let strToArray = strToCount.split(' ').join('').split('');
+  
   
 
   //console.log(strToArray);
@@ -36,4 +37,4 @@ const countLetters = function (strToCount) {
   return charCount;
 };
 
-console.log(countLetters("lighthouse in the house"));
+//console.log(countLetters("lighthouse in the house"));
