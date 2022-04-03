@@ -13,7 +13,7 @@ const countLetters = function (strToCount) {
   strToArray = strToCount.replace(/\s+/g, '');
   
 
-  console.log(strToArray);
+  //console.log(strToArray);
   
   const charCount = {};
   

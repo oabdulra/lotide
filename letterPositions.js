@@ -27,7 +27,15 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
 };
 
 const letterPositions = function(sentence) {
+  
   const results = {};
+
+  let sentenceArray = sentence.split('');
+  sentenceArray = sentence.replace(/\s+/g, '');
+
+  console.log(sentenceArray);
 
   return results;
 };
+
+//letterPositions('hot dog');
