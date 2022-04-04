@@ -7,6 +7,19 @@ const assertEqual = function(actual, expected) {
 
 };
 
+const eqArrays = function(arrayOne , arrayTwo) {
+
+  for (let i = 0; i < arrayOne.length; i++) {
+
+    if (arrayOne[i] !== arrayTwo[i]) {
+      return false;
+    }
+
+  }
+
+  return true;
+};
+
 const eqObjects = function(object1, object2) {
 
 
@@ -36,7 +49,7 @@ const eqObjects = function(object1, object2) {
   
 };
 
-const ab = { a: "1", b: "2" };
+/*const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 eqObjects(ab, ba); // => true
 assertEqual(eqObjects(ab, ba), true);
@@ -51,3 +64,12 @@ const cheesePizza3 = { crust: "thick", sauce: "tomato", cheese: "parm"};
 
 assertEqual(eqObjects(cheesePizza, cheesePizza2),true); // should fail
 assertEqual(eqObjects(cheesePizza2, cheesePizza3),false); //should pass
+
+const cd = { c: "1", d: ["2", 3] };
+const dc = { d: ["2", 3], c: "1" };
+assertEqual(eqObjects(cd, dc) , true); // => true
+
+const cd2 = { c: "1", d: ["2", 3, 4] };
+assertEqual(eqObjects(cd, cd2), false); // => false
+*/
+
