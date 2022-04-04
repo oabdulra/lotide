@@ -35,12 +35,11 @@ const letterPositions = function(sentence) {
   
   //console.log(sentenceArray);
 
-  for (let i = 0 ; i < sentenceArray.length ; i++){
+  for (let i = 0; i < sentenceArray.length; i++) {
 
-    if(results[sentenceArray[i]]){
+    if (results[sentenceArray[i]]) {
       results[sentenceArray[i]].push(i);
-    }
-    else{
+    } else {
       results[sentenceArray[i]] = [i];
     }
   }

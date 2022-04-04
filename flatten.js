@@ -26,22 +26,21 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
 
 };
 
-const flatten = function(arrayToFlatten) { 
+const flatten = function(arrayToFlatten) {
 
   const newFlatArray = [];
 
-  for (let i = 0 ; i < arrayToFlatten.length ; i++) {
+  for (let i = 0; i < arrayToFlatten.length; i++) {
 
-    if( Array.isArray(arrayToFlatten[i])) {
+    if (Array.isArray(arrayToFlatten[i])) {
 
-      for (let j = 0 ; j < arrayToFlatten[i].length ; j++) {
+      for (let j = 0; j < arrayToFlatten[i].length; j++) {
 
         newFlatArray.push(arrayToFlatten[i][j]);
         
       }
 
-    }
-    else {
+    } else {
 
       newFlatArray.push(arrayToFlatten[i]);
     }
@@ -51,6 +50,6 @@ const flatten = function(arrayToFlatten) {
   return newFlatArray;
   
 
-}
+};
 
 //flatten([1, 2, [3, 4, 5 , 9], 5, [6]]) ;
