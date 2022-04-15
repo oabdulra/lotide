@@ -1,3 +1,4 @@
+const eqArrays = require('./eqArrays');
 
 const map = function(array , callback) {
 
@@ -11,43 +12,13 @@ const map = function(array , callback) {
   return results;
 };
 
-const eqArrays = function(arrayOne , arrayTwo) {
-
-  if (arrayOne.length !== arrayTwo.length) {
-    return false;
-  }
-  
-  for (let i = 0; i < arrayOne.length; i++) {
-
-    if (arrayOne[i] !== arrayTwo[i]) {
-      return false;
-    }
-
-  }
-
-  return true;
-
-};
-
-const assertArraysEqual = function(arrayOne, arrayTwo) {
-  
-  const test = eqArrays(arrayOne , arrayTwo);
-
-  if (test) {
-    console.log(`✅✅✅ Assertion Passed: ${arrayOne}  = ${arrayTwo}`);
-  } else {
-
-    console.log(`🛑🛑🛑 Assertion Failed: ${arrayOne} != ${arrayTwo}`);
-  }
+module.exports = map;
 
 
-};
+// const words = ["ground", "control", "to", "major", "tom"];
+// const wordsResults = ['g','c','t','m','t'];
 
 
-const words = ["ground", "control", "to", "major", "tom"];
-const wordsResults = ['g','c','t','m','t'];
+// const results1 = map(words, word => word[0]);
 
-
-const results1 = map(words, word => word[0]);
-
-assertArraysEqual(results1, wordsResults);
+// assertArraysEqual(results1, wordsResults);
