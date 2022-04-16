@@ -56,3 +56,9 @@ This project was created and published by me as part of my learnings at Lighthou
  * `takeUntil`: Takes in an array and a point to stop, and returns a new array with everything until the stop point
 
  * `without`: takes in an array and removes elements not needed, and returns a new array with elements removed
+
+ * `assertEqual`: Checks to see if 2 passthroughs are equal
+
+ * `assertArraysEqual`: Check to see if 2 array are equal
+
+ * `assertObjectsEqual`: Checks to see if 2 objects are the same

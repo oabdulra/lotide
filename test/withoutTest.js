@@ -8,6 +8,7 @@ describe("#without" , () => {
   const results1 = without(words, ["lighthouse"]); 
   const testing = [1,2,3,4,5,6];
   const results2 = without(testing, [2,4]);
+  const results3 = without([0, 1, 2, 3, 2, 1], [0, 1, 2]);
 
 
   it("should return ['hello','world'] when running without(words, ['lighthouse']", () => {
@@ -17,5 +18,10 @@ describe("#without" , () => {
   it("should return [1,3,5,6] when running without(testing, [2,4])", () => {
     assert.notStrictEqual(results2,[1,3,5,6]);
   })
+
+  it("should return [3,2,1] when running without([0,1,2,3,2,1], [0,1,2])", () => {
+    assert.notStrictEqual(results2,[1,3,5,6]);
+  })
+
 
 });
