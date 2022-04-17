@@ -1,5 +1,3 @@
-
-
 const flatten = function(arrayToFlatten) {
 
   const newFlatArray = [];

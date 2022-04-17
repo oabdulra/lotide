@@ -1,7 +1,4 @@
 
-
-const eqArrays = require('./eqArrays');
-
 const eqObjects = function(object1, object2) {
 
 

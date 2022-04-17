@@ -1,5 +1,3 @@
-const eqArrays = require('./eqArrays');
-
 const map = function(array , callback) {
 
   const results = [];
@@ -15,10 +13,3 @@ const map = function(array , callback) {
 module.exports = map;
 
 
-// const words = ["ground", "control", "to", "major", "tom"];
-// const wordsResults = ['g','c','t','m','t'];
-
-
-// const results1 = map(words, word => word[0]);
-
-// assertArraysEqual(results1, wordsResults);
